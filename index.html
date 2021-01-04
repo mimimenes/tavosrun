@@ -10,7 +10,12 @@
     <script src="index.js"></script>
 </head>
 
-<body id="t" class="offline">
+<body id="t" class="offline dark-mode">
+    <div class="control-overlay">
+        <button id="toggle-dark-mode" type="button">
+            🌞
+        </button>
+    </div>
     <div id="messageBox" class="sendmessage">
          <h1 style="text-align: center;font-family: 'Open Sans', sans-serif;">Aperte espaço e pule advogados e nintendistas com Tavos</h1>
          <div class="niokbutton" onclick="okbuttonsend()"></div>
@@ -40,5 +45,7 @@
     }
 };
 </script>
-    
+
+<script src="dark-mode.js"></script>
+
 </html>
