@@ -40,6 +40,11 @@ html, body {
   transition: background 200ms, transform 200ms;
   cursor: pointer;
   outline: none;
+  z-index: 2;
+}
+
+.runner-container {
+  pointer-events: none;
 }
 
 #toggle-dark-mode:hover {
