@@ -24,6 +24,52 @@ html, body {
   display: none;
 }
 
+/* Dark mode */
+.control-overlay {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+#toggle-dark-mode {
+  font-size: 24px;
+  background: var(--button-bg);
+  padding: 8px;
+  border-radius: 4px;
+  border: 2px solid var(--button-border);
+  transition: background 200ms, transform 200ms;
+  cursor: pointer;
+  outline: none;
+  z-index: 2;
+}
+
+.runner-container {
+  pointer-events: none;
+}
+
+#toggle-dark-mode:hover {
+  background: var(--button-hover-bg);
+}
+
+#toggle-dark-mode:active {
+  transform: scale(0.95);
+}
+
+body {
+  transition: background 200ms;
+  --button-bg: rgba(0, 0, 0, 0.2);
+  --button-hover-bg: rgba(0, 0, 0, 0.3);
+  --button-border: rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode {
+  --button-bg: rgba(255, 255, 255, 0.2);
+  --button-hover-bg: rgba(255, 255, 255, 0.3);
+  --button-border: rgba(255, 255, 255, 0.5);
+
+  background-color: #0e1117;
+  color: #eee;
+}
 
 /* Offline page */
 
